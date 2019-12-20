@@ -37,9 +37,6 @@ namespace Pik.UserRequest
           var userData = jsonData.GetProperty("user");
           user.fio = userData.GetProperty("fio").GetString();
 
-          user.email = userData.GetProperty("email").GetString();
-
-
           var departmentData = jsonData.GetProperty("department");
           user.department = departmentData.GetProperty("name").GetString();
 

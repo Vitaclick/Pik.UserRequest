@@ -6,7 +6,7 @@ namespace Pik.UserRequest
   {
     public string AccountName { get; set; }
     public string fio { get; set; }
-    public string email { get; set; }
+    public string email => AccountName + "@pik.ru";
     public string department { get; set; }
     public string position { get; set; }
     public bool isFired { get; set; }
